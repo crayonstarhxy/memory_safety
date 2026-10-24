@@ -1,0 +1,20 @@
+[build-system]
+requires = ["setuptools>=70"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "agent-memory-security-lab"
+version = "0.1.0"
+description = "A safe, deterministic attack/defense lab for AI agent memory security"
+readme = "README.md"
+requires-python = ">=3.11"
+license = { text = "MIT" }
+authors = [{ name = "ploughu" }]
+dependencies = []
+
+[project.scripts]
+amslab = "amslab.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
